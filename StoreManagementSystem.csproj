@@ -9,8 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="CustomAssets\" />
-    <Folder Include="Classes\" />
     <Folder Include="Forms\" />
   </ItemGroup>
 
