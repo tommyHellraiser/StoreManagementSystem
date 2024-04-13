@@ -1,0 +1,93 @@
+13/04/2024 5:32:13Sup, logger test here
+24/04/13T05:43:05.914186	[DEBUG]	
+24/04/13T05:43:20.217977	[DEBUG]	Sup, logger test here
+24/04/13T05:46:25.499561	[DEBUG]	LoadInitConfigE:\CSharp\StoreManagementSystem\Home.cs18Sup, logger test here
+24/04/13T05:50:55.372389	[DEBUG]	\Home.cs	18	LoadInitConfig	Sup, logger test here
+24/04/13T05:51:32.478798	[DEBUG]	Home.cs: -> 18()	LoadInitConfig	Sup, logger test here
+24/04/13T05:52:00.174972	[DEBUG]	Home.cs:18 ->	LoadInitConfig()	Sup, logger test here
+24/04/13T05:52:18.052562	[DEBUG]	Home.cs:18 ->	LoadInitConfig()		Sup, logger test here
+24/04/13T05:52:28.098891	[DEBUG]	Home.cs:18 ->	LoadInitConfig()			Sup, logger test here
+24/04/13T05:57:49.012843	[DEBUG]	Home.cs:18 ->	LoadInitConfig()			Sup, logger test here
+24/04/13T06:07:44.821291	[DEBUG]		Home.cs:19 ->	LoadInitConfig()			Sup, logger test here
+24/04/13T06:07:44.823774	[INFO]		Home.cs:20 ->	LoadInitConfig()			Sup, logger test here
+24/04/13T06:07:44.823926	[WARNING]		Home.cs:21 ->	LoadInitConfig()			Sup, logger test here
+24/04/13T06:07:44.824115	[ERROR]		Home.cs:22 ->	LoadInitConfig()			Sup, logger test here
+24/04/13T06:08:17.995101	[DEBUG]			Home.cs:19 ->	LoadInitConfig()			Sup, logger test here
+24/04/13T06:08:18.002926	[INFO]			Home.cs:20 ->	LoadInitConfig()			Sup, logger test here
+24/04/13T06:08:18.003043	[WARNING]			Home.cs:21 ->	LoadInitConfig()			Sup, logger test here
+24/04/13T06:08:18.003139	[ERROR]			Home.cs:22 ->	LoadInitConfig()			Sup, logger test here
+24/04/13T06:08:40.201005	[DEBUG]	Home.cs:19 ->	LoadInitConfig()			Sup, logger test here
+24/04/13T06:08:40.208606	[INFO]	Home.cs:20 ->	LoadInitConfig()			Sup, logger test here
+24/04/13T06:08:40.208749	[WARNING]	Home.cs:21 ->	LoadInitConfig()			Sup, logger test here
+24/04/13T06:08:40.208849	[ERROR]	Home.cs:22 ->	LoadInitConfig()			Sup, logger test here
+24/04/13T06:08:52.114333	[DEBUG]		Home.cs:19 ->	LoadInitConfig()			Sup, logger test here
+24/04/13T06:08:52.117786	[INFO]		Home.cs:20 ->	LoadInitConfig()			Sup, logger test here
+24/04/13T06:08:52.117930	[WARNING]	Home.cs:21 ->	LoadInitConfig()			Sup, logger test here
+24/04/13T06:08:52.118063	[ERROR]		Home.cs:22 ->	LoadInitConfig()			Sup, logger test here
+24/04/13T06:09:14.466691	[DEBUG]		Home.cs:19 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:09:14.469695	[INFO]		Home.cs:20 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:09:14.469817	[WARNING]	Home.cs:21 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:09:14.469947	[ERROR]		Home.cs:22 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:14:10.829688	[DEBUG]		Home.cs:13 -> .ctor()			Previous log to async task
+24/04/13T06:14:10.832762	[DEBUG]		Home.cs:23 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:14:10.832914	[INFO]		Home.cs:24 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:14:10.833023	[WARNING]	Home.cs:25 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:14:10.833141	[ERROR]		Home.cs:26 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:14:32.798584	[DEBUG]		Home.cs:13 -> .ctor()			Previous log to async task
+24/04/13T06:14:32.801154	[DEBUG]		Home.cs:23 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:14:32.801333	[INFO]		Home.cs:24 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:14:32.801458	[WARNING]	Home.cs:25 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:14:32.801570	[ERROR]		Home.cs:26 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:16.119277	[DEBUG]		Home.cs:13 -> .ctor()			Previous log to async task
+24/04/13T06:15:16.122144	[DEBUG]		Home.cs:24 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:16.122262	[INFO]		Home.cs:25 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:16.122358	[WARNING]	Home.cs:26 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:16.122466	[ERROR]		Home.cs:27 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:17.133898	[DEBUG]		Home.cs:24 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:17.134181	[INFO]		Home.cs:25 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:17.134345	[WARNING]	Home.cs:26 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:17.134579	[ERROR]		Home.cs:27 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:18.137196	[DEBUG]		Home.cs:24 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:18.137486	[INFO]		Home.cs:25 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:18.137620	[WARNING]	Home.cs:26 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:18.137737	[ERROR]		Home.cs:27 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:19.150909	[DEBUG]		Home.cs:24 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:19.151188	[INFO]		Home.cs:25 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:19.151306	[WARNING]	Home.cs:26 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:19.151420	[ERROR]		Home.cs:27 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:20.159392	[DEBUG]		Home.cs:24 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:20.159685	[INFO]		Home.cs:25 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:20.159855	[WARNING]	Home.cs:26 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:20.160017	[ERROR]		Home.cs:27 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:21.163499	[DEBUG]		Home.cs:24 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:21.163758	[INFO]		Home.cs:25 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:21.163890	[WARNING]	Home.cs:26 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:21.164047	[ERROR]		Home.cs:27 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:22.170535	[DEBUG]		Home.cs:24 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:22.170776	[INFO]		Home.cs:25 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:22.170885	[WARNING]	Home.cs:26 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:22.170980	[ERROR]		Home.cs:27 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:23.173848	[DEBUG]		Home.cs:24 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:23.174090	[INFO]		Home.cs:25 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:23.174216	[WARNING]	Home.cs:26 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:23.174321	[ERROR]		Home.cs:27 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:24.188147	[DEBUG]		Home.cs:24 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:24.188467	[INFO]		Home.cs:25 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:24.188638	[WARNING]	Home.cs:26 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:24.188764	[ERROR]		Home.cs:27 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:25.195006	[DEBUG]		Home.cs:24 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:25.195771	[INFO]		Home.cs:25 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:25.195930	[WARNING]	Home.cs:26 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:25.196083	[ERROR]		Home.cs:27 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:26.200423	[DEBUG]		Home.cs:24 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:26.200617	[INFO]		Home.cs:25 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:26.200775	[WARNING]	Home.cs:26 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:26.200912	[ERROR]		Home.cs:27 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:27.203672	[DEBUG]		Home.cs:24 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:27.203881	[INFO]		Home.cs:25 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:27.203979	[WARNING]	Home.cs:26 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:27.204066	[ERROR]		Home.cs:27 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:28.205666	[DEBUG]		Home.cs:24 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:28.205928	[INFO]		Home.cs:25 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:28.206040	[WARNING]	Home.cs:26 -> LoadInitConfig()			Sup, logger test here
+24/04/13T06:15:28.206154	[ERROR]		Home.cs:27 -> LoadInitConfig()			Sup, logger test here
