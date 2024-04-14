@@ -28,30 +28,10 @@ namespace StoreManagementSystem
 				Thread.Sleep(100);
 			}
 
-			if (!CallLogin())
+			if (!FirstLogin())
 			{
 				Environment.Exit(0);
 			}
-			
-
-			//Hash a pass in C#
-			//SHA256 hasher = SHA256.Create();
-			//string pass = "hellraiser";
-
-			//byte[] hashed_bytes = hasher.ComputeHash(Encoding.ASCII.GetBytes(pass));
-
-			//StringBuilder builder = new StringBuilder();
-
-			//foreach (byte letter in hashed_bytes)
-			//{
-			//	builder.Append(letter.ToString("x2"));
-			//}
-
-			//string hashed_pass = builder.ToString();
-			//"3ec82da1f1f8be7270a7d21fd9d1fdce7e56a711b58e4949124d71c44a14083b"
-			//"e28781dfc2c31e36257efb7ea8f1d3923dedabe74a566b908fac38292a0ceb04"
-
-
 		}
 
 		#region Db Properties
@@ -188,7 +168,7 @@ namespace StoreManagementSystem
 		/// <returns>
 		/// True if login was successful, false if user closed form
 		/// </returns>
-		private bool CallLogin()
+		private bool FirstLogin()
 		{
 			Logger logger = Logger.Instance;
 
@@ -212,6 +192,9 @@ namespace StoreManagementSystem
 
 				//	Otherwise, user should be logged in by now
 				this.user = login_form.user;
+
+				//	Set the username in home screen label
+				lblUserLoggedIn.Text += $" {this.user.username}";
 
 				return true;
 			}

@@ -46,6 +46,11 @@ namespace StoreManagementSystem.Classes.General
 		public static SqlConnection GetOpenConn()
 		{
 			SqlConnection conn = new SqlConnection(conn_builder.ConnectionString);
+			//	If db connection is open when we're trying to open it, we need to wait until it's closed
+			while (conn.State == System.Data.ConnectionState.Open)
+			{
+				Thread.Sleep(100);
+			}
 			conn.Open();
 
 			return conn;
@@ -101,6 +106,8 @@ namespace StoreManagementSystem.Classes.General
 			SqlCommand cmd = new SqlCommand(query, conn);
 
 			int ar = cmd.ExecuteNonQuery();
+
+			conn.Close();
 
 			return ar > 0;
 		}

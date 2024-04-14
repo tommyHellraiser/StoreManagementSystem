@@ -35,6 +35,7 @@
 			btnNewSale = new CustomButton.HellButton();
 			btnItemsManagement = new CustomButton.HellButton();
 			btnBalancesManagement = new CustomButton.HellButton();
+			lblUserLoggedIn = new Label();
 			((System.ComponentModel.ISupportInitialize)picDbConnStatus).BeginInit();
 			SuspendLayout();
 			// 
@@ -161,12 +162,25 @@
 			btnBalancesManagement.TextColor = Color.WhiteSmoke;
 			btnBalancesManagement.UseVisualStyleBackColor = false;
 			// 
+			// lblUserLoggedIn
+			// 
+			lblUserLoggedIn.AutoSize = true;
+			lblUserLoggedIn.BorderStyle = BorderStyle.Fixed3D;
+			lblUserLoggedIn.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+			lblUserLoggedIn.Location = new Point(12, 9);
+			lblUserLoggedIn.Name = "lblUserLoggedIn";
+			lblUserLoggedIn.Size = new Size(102, 47);
+			lblUserLoggedIn.TabIndex = 7;
+			lblUserLoggedIn.Text = "User: ";
+			lblUserLoggedIn.TextAlign = ContentAlignment.MiddleLeft;
+			// 
 			// Home
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = SystemColors.ActiveCaption;
 			ClientSize = new Size(1084, 661);
+			Controls.Add(lblUserLoggedIn);
 			Controls.Add(btnBalancesManagement);
 			Controls.Add(btnItemsManagement);
 			Controls.Add(btnNewSale);
@@ -180,6 +194,7 @@
 			Text = "Home";
 			((System.ComponentModel.ISupportInitialize)picDbConnStatus).EndInit();
 			ResumeLayout(false);
+			PerformLayout();
 		}
 
 		#endregion
@@ -191,5 +206,6 @@
 		private CustomButton.HellButton btnNewSale;
 		private CustomButton.HellButton btnItemsManagement;
 		private CustomButton.HellButton btnBalancesManagement;
+		private Label lblUserLoggedIn;
 	}
 }

@@ -77,3 +77,31 @@
 24/04/14T05:37:44.710314	[INFO]		DbConn.cs:33 -> Init()			Db Connection established
 24/04/14T05:56:48.212796	[INFO]		Home.cs:144 -> LoadInitConfig()			Config loaded OK
 24/04/14T05:56:48.400354	[INFO]		DbConn.cs:33 -> Init()			Db Connection established
+24/04/14T05:18:45.684243	[INFO]		Home.cs:124 -> LoadInitConfig()			Config loaded OK
+24/04/14T05:18:46.106918	[INFO]		DbConn.cs:33 -> Init()			Db Connection established
+24/04/14T05:19:13.002106	[INFO]		Home.cs:124 -> LoadInitConfig()			Config loaded OK
+24/04/14T05:19:13.209573	[INFO]		DbConn.cs:33 -> Init()			Db Connection established
+24/04/14T05:21:16.332365	[INFO]		Home.cs:124 -> LoadInitConfig()			Config loaded OK
+24/04/14T05:21:16.520515	[INFO]		DbConn.cs:33 -> Init()			Db Connection established
+24/04/14T05:24:13.624196	[INFO]		Home.cs:124 -> LoadInitConfig()			Config loaded OK
+24/04/14T05:24:13.834254	[INFO]		DbConn.cs:33 -> Init()			Db Connection established
+24/04/14T05:24:45.575473	[INFO]		Home.cs:124 -> LoadInitConfig()			Config loaded OK
+24/04/14T05:24:45.761968	[INFO]		DbConn.cs:33 -> Init()			Db Connection established
+24/04/14T05:26:28.554644	[INFO]		Home.cs:124 -> LoadInitConfig()			Config loaded OK
+24/04/14T05:26:28.761032	[INFO]		DbConn.cs:33 -> Init()			Db Connection established
+24/04/14T05:31:36.427746	[INFO]		Home.cs:124 -> LoadInitConfig()			Config loaded OK
+24/04/14T05:31:36.610869	[INFO]		DbConn.cs:33 -> Init()			Db Connection established
+24/04/14T05:32:02.745917	[ERROR]		Home.cs:200 -> CallLogin()			Error logging user in: The connection was not closed. The connection's current state is open.
+24/04/14T05:32:06.691007	[INFO]		Home.cs:124 -> LoadInitConfig()			Config loaded OK
+24/04/14T05:32:06.859512	[INFO]		DbConn.cs:33 -> Init()			Db Connection established
+24/04/14T05:32:09.261794	[ERROR]		Home.cs:200 -> CallLogin()			Error logging user in: The connection was not closed. The connection's current state is open.
+24/04/14T05:35:40.966706	[INFO]		Home.cs:124 -> LoadInitConfig()			Config loaded OK
+24/04/14T05:35:41.153549	[INFO]		DbConn.cs:33 -> Init()			Db Connection established
+24/04/14T05:38:05.213209	[INFO]		Home.cs:124 -> LoadInitConfig()			Config loaded OK
+24/04/14T05:38:05.425341	[INFO]		DbConn.cs:33 -> Init()			Db Connection established
+24/04/14T05:39:21.224604	[INFO]		Home.cs:124 -> LoadInitConfig()			Config loaded OK
+24/04/14T05:39:21.424168	[INFO]		DbConn.cs:33 -> Init()			Db Connection established
+24/04/14T05:42:25.679889	[INFO]		Home.cs:124 -> LoadInitConfig()			Config loaded OK
+24/04/14T05:42:25.884559	[INFO]		DbConn.cs:33 -> Init()			Db Connection established
+24/04/14T05:42:46.842282	[INFO]		Home.cs:124 -> LoadInitConfig()			Config loaded OK
+24/04/14T05:42:47.045224	[INFO]		DbConn.cs:33 -> Init()			Db Connection established

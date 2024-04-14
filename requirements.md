@@ -3,6 +3,7 @@
 - [x] Database static class for conn
 - [x] Logger
 - [x] Display time in app
+- [x] Mandatory initial login
 - [ ] Inventory tracking
 - [ ] Sales logs
 - [ ] Items sales logs with FK to sales logs

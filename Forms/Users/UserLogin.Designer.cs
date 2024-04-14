@@ -29,10 +29,12 @@
 		private void InitializeComponent()
 		{
 			txtUsernameInput = new TextBox();
-			label1 = new Label();
-			label2 = new Label();
+			lblUsername = new Label();
+			lblPassword = new Label();
 			txtPasswordInput = new TextBox();
 			btnLoginConfirm = new Button();
+			lblUsernameRequired = new Label();
+			lblPasswordRequired = new Label();
 			SuspendLayout();
 			// 
 			// txtUsernameInput
@@ -44,25 +46,25 @@
 			txtUsernameInput.TabIndex = 0;
 			txtUsernameInput.TextAlign = HorizontalAlignment.Center;
 			// 
-			// label1
+			// lblUsername
 			// 
-			label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-			label1.Location = new Point(110, 31);
-			label1.Name = "label1";
-			label1.Size = new Size(287, 31);
-			label1.TabIndex = 1;
-			label1.Text = "Username:";
-			label1.TextAlign = ContentAlignment.MiddleCenter;
+			lblUsername.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+			lblUsername.Location = new Point(110, 31);
+			lblUsername.Name = "lblUsername";
+			lblUsername.Size = new Size(287, 31);
+			lblUsername.TabIndex = 1;
+			lblUsername.Text = "Username:";
+			lblUsername.TextAlign = ContentAlignment.MiddleCenter;
 			// 
-			// label2
+			// lblPassword
 			// 
-			label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-			label2.Location = new Point(110, 124);
-			label2.Name = "label2";
-			label2.Size = new Size(287, 31);
-			label2.TabIndex = 3;
-			label2.Text = "Password:";
-			label2.TextAlign = ContentAlignment.MiddleCenter;
+			lblPassword.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+			lblPassword.Location = new Point(110, 124);
+			lblPassword.Name = "lblPassword";
+			lblPassword.Size = new Size(287, 31);
+			lblPassword.TabIndex = 3;
+			lblPassword.Text = "Password:";
+			lblPassword.TextAlign = ContentAlignment.MiddleCenter;
 			// 
 			// txtPasswordInput
 			// 
@@ -84,16 +86,42 @@
 			btnLoginConfirm.UseVisualStyleBackColor = true;
 			btnLoginConfirm.Click += btnLoginConfirm_Click;
 			// 
+			// lblUsernameRequired
+			// 
+			lblUsernameRequired.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+			lblUsernameRequired.ForeColor = Color.Red;
+			lblUsernameRequired.Location = new Point(67, 31);
+			lblUsernameRequired.Name = "lblUsernameRequired";
+			lblUsernameRequired.Size = new Size(97, 31);
+			lblUsernameRequired.TabIndex = 4;
+			lblUsernameRequired.Text = "*Required";
+			lblUsernameRequired.TextAlign = ContentAlignment.MiddleCenter;
+			lblUsernameRequired.Visible = false;
+			// 
+			// lblPasswordRequired
+			// 
+			lblPasswordRequired.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+			lblPasswordRequired.ForeColor = Color.Red;
+			lblPasswordRequired.Location = new Point(67, 124);
+			lblPasswordRequired.Name = "lblPasswordRequired";
+			lblPasswordRequired.Size = new Size(97, 31);
+			lblPasswordRequired.TabIndex = 5;
+			lblPasswordRequired.Text = "*Required";
+			lblPasswordRequired.TextAlign = ContentAlignment.MiddleCenter;
+			lblPasswordRequired.Visible = false;
+			// 
 			// UserLogin
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = SystemColors.ActiveCaption;
 			ClientSize = new Size(508, 301);
+			Controls.Add(lblPasswordRequired);
+			Controls.Add(lblUsernameRequired);
 			Controls.Add(btnLoginConfirm);
-			Controls.Add(label2);
+			Controls.Add(lblPassword);
 			Controls.Add(txtPasswordInput);
-			Controls.Add(label1);
+			Controls.Add(lblUsername);
 			Controls.Add(txtUsernameInput);
 			FormBorderStyle = FormBorderStyle.FixedSingle;
 			MaximizeBox = false;
@@ -109,9 +137,11 @@
 		#endregion
 
 		private TextBox txtUsernameInput;
-		private Label label1;
-		private Label label2;
+		private Label lblUsername;
+		private Label lblPassword;
 		private TextBox txtPasswordInput;
 		private Button btnLoginConfirm;
+		private Label lblUsernameRequired;
+		private Label lblPasswordRequired;
 	}
 }
