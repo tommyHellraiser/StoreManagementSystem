@@ -35,7 +35,14 @@ namespace StoreManagementSystem.Classes
 			public bool? TrustServerCertificate { get; set; }
 			internal bool Validate()
 			{
+				//	Checking nullability
 				if (this.DataSource == null || this.InitialCatalog == null || this.IntegratedSecurity == null || this.TrustServerCertificate == null)
+				{
+					return false;
+				}
+
+				// Checking completion of fields
+				if (this.DataSource == "" || this.InitialCatalog == "")
 				{
 					return false;
 				}
@@ -67,12 +74,20 @@ namespace StoreManagementSystem.Classes
 					throw new NullReferenceException("No config.json was found in specified directory");
 				}
 				Rootobject? configuration = JsonSerializer.Deserialize<Rootobject>(json);
-				if (configuration == null || !configuration.Validate())
+				if (configuration == null)
 				{
-					throw new NullReferenceException("Couldn't load configuration from config.json file");
+					throw new ApplicationException("Couldn't load configuration from config.json file");
+				}
+				if (!configuration.Validate())
+				{
+					throw new ApplicationException("Coudln't load required fields from config.json");
 				}
 
-
+				//	Set the values and return 
+				DataSource = configuration.DbConfig.DataSource!;
+				InitialCatalog = configuration.DbConfig.InitialCatalog!;
+				IntegratedSecurity = (bool)configuration.DbConfig.IntegratedSecurity!;
+				TrustServerCertificate = (bool)configuration.DbConfig.TrustServerCertificate!;
 			}
 		}
 	}

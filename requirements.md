@@ -1,13 +1,14 @@
 ## General requirements
-- Configuration static class to load from json file
-- Database static class for conn
-- Display time in app
-- Inventory tracking
-- Sales logs
-- Items sales logs with FK to sales logs
-- Close balance manually
-- Add items
-- Delete items only when there are no items left
-- Shopping cart to allow several items in each sale
-- Login for users (employees)
-- Total sales for a user in a day
+- [x] Configuration static class to load from json file
+- [x] Database static class for conn
+- [x] Logger
+- [x] Display time in app
+- [ ] Inventory tracking
+- [ ] Sales logs
+- [ ] Items sales logs with FK to sales logs
+- [ ] Close balance manually
+- [ ] Add items
+- [ ] Delete items only when there are no items left
+- [ ] Shopping cart to allow several items in each sale
+- [ ] Login for users (employees)
+- [ ] Total sales for a user in a day

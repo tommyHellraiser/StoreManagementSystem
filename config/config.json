@@ -1,7 +1,7 @@
 {
 	"DbConfig": {
 		"DataSource": "NACHO-DESKTOP",
-		"InitialCatalog": "StoreManagement",
+		"InitialCatalog": "StoreDb",
 		"IntegratedSecurity": true,
 		"TrustServerCertificate": true
 	}

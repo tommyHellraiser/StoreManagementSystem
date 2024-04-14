@@ -28,12 +28,51 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Text = "Form1";
+			picDbConnStatus = new PictureBox();
+			lblClock = new Label();
+			((System.ComponentModel.ISupportInitialize)picDbConnStatus).BeginInit();
+			SuspendLayout();
+			// 
+			// picDbConnStatus
+			// 
+			picDbConnStatus.Anchor = AnchorStyles.None;
+			picDbConnStatus.BackgroundImageLayout = ImageLayout.Stretch;
+			picDbConnStatus.Image = Properties.Resources.database_conn_error;
+			picDbConnStatus.InitialImage = Properties.Resources.database_conn_error;
+			picDbConnStatus.Location = new Point(748, 398);
+			picDbConnStatus.Name = "picDbConnStatus";
+			picDbConnStatus.Size = new Size(40, 40);
+			picDbConnStatus.SizeMode = PictureBoxSizeMode.StretchImage;
+			picDbConnStatus.TabIndex = 0;
+			picDbConnStatus.TabStop = false;
+			// 
+			// lblClock
+			// 
+			lblClock.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+			lblClock.Location = new Point(532, 9);
+			lblClock.Name = "lblClock";
+			lblClock.Size = new Size(256, 56);
+			lblClock.TabIndex = 1;
+			lblClock.Text = "--/--/-- --:--";
+			lblClock.TextAlign = ContentAlignment.MiddleCenter;
+			// 
+			// Home
+			// 
+			AutoScaleDimensions = new SizeF(7F, 15F);
+			AutoScaleMode = AutoScaleMode.Font;
+			BackColor = SystemColors.ActiveCaption;
+			ClientSize = new Size(800, 450);
+			Controls.Add(lblClock);
+			Controls.Add(picDbConnStatus);
+			Name = "Home";
+			Text = "Home";
+			((System.ComponentModel.ISupportInitialize)picDbConnStatus).EndInit();
+			ResumeLayout(false);
 		}
 
 		#endregion
+
+		private PictureBox picDbConnStatus;
+		private Label lblClock;
 	}
 }

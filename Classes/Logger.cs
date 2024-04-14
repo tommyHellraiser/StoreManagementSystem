@@ -44,7 +44,7 @@ namespace StoreManagementSystem.Classes
 			log_full_path = log_path + DateTime.Now.ToString("yyyy-MM-dd") + ".log";
 			if (!File.Exists(log_full_path) && log_full_path != null)
 			{
-				File.Create(log_full_path);
+				//File.Create(log_full_path);
 			}
 			else
 			{
