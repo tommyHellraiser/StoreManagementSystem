@@ -39,9 +39,9 @@
 			picDbConnStatus.BackgroundImageLayout = ImageLayout.Stretch;
 			picDbConnStatus.Image = Properties.Resources.database_conn_error;
 			picDbConnStatus.InitialImage = Properties.Resources.database_conn_error;
-			picDbConnStatus.Location = new Point(748, 398);
+			picDbConnStatus.Location = new Point(753, 403);
 			picDbConnStatus.Name = "picDbConnStatus";
-			picDbConnStatus.Size = new Size(40, 40);
+			picDbConnStatus.Size = new Size(35, 35);
 			picDbConnStatus.SizeMode = PictureBoxSizeMode.StretchImage;
 			picDbConnStatus.TabIndex = 0;
 			picDbConnStatus.TabStop = false;

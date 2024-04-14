@@ -20,3 +20,36 @@
 - sale_logs
 - item_sale_logs
 - balances
+
+
+## Home page sections
+- [x] Clock
+- [x] Db status
+- [ ] Db reset button
+- [ ] User management
+- [ ] Item management
+- [ ] Balances management
+- [ ] New sale
+
+### Item management
+- [ ] Add item
+- [ ] Delete item
+- [ ] Edit item
+- [ ] Search item
+
+### User management
+- [ ] Create user
+- [ ] Delete user
+- [ ] Modify user
+- [ ] View users
+
+### Balances management
+- [ ] Close balance
+- [ ] View balances
+
+### New sale
+- [ ] Add item
+- [ ] Remove item
+- [ ] Complete sale
+- [ ] Display cart
+- [ ] Total amount
