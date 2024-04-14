@@ -28,3 +28,14 @@
 24/04/14T04:28:08.631503	[INFO]		Home.cs:225 -> btnResetDatabase_Click()			Database reset successfully!
 24/04/14T04:28:23.954674	[INFO]		Home.cs:225 -> btnResetDatabase_Click()			Database reset successfully!
 24/04/14T04:28:48.580191	[INFO]		Home.cs:225 -> btnResetDatabase_Click()			Database reset successfully!
+24/04/14T04:34:55.484947	[INFO]		Home.cs:128 -> LoadInitConfig()			Config loaded OK
+24/04/14T04:34:55.713736	[INFO]		DbConn.cs:33 -> Init()			Db Connection established
+24/04/14T04:34:59.174097	[INFO]		Home.cs:223 -> btnResetDatabase_Click()			Database reset successfully!
+24/04/14T04:35:26.240340	[INFO]		Home.cs:128 -> LoadInitConfig()			Config loaded OK
+24/04/14T04:35:26.422878	[INFO]		DbConn.cs:33 -> Init()			Db Connection established
+24/04/14T04:38:19.332558	[INFO]		Home.cs:128 -> LoadInitConfig()			Config loaded OK
+24/04/14T04:38:19.529300	[INFO]		DbConn.cs:33 -> Init()			Db Connection established
+24/04/14T04:42:18.169719	[INFO]		Home.cs:129 -> LoadInitConfig()			Config loaded OK
+24/04/14T04:42:20.298303	[WARNING]	DbConn.cs:41 -> Init()			Couldn't connect to database: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+24/04/14T04:42:31.354138	[INFO]		Home.cs:247 -> btnResetDatabase_Click()			Database reset successfully!
+24/04/14T04:43:04.886466	[INFO]		Home.cs:247 -> btnResetDatabase_Click()			Database reset successfully!

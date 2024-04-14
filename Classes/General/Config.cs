@@ -6,7 +6,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 
 
-namespace StoreManagementSystem.Classes
+namespace StoreManagementSystem.Classes.General
 {
 	public static class Config
 	{

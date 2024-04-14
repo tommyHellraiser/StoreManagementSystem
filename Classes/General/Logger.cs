@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StoreManagementSystem.Classes
+namespace StoreManagementSystem.Classes.General
 {
 	public sealed class Logger
 	{

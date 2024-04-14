@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Data.SqlClient;
 
-namespace StoreManagementSystem.Classes
+namespace StoreManagementSystem.Classes.General
 {
 	internal static class DbConn
 	{

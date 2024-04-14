@@ -1,11 +1,10 @@
-using Microsoft.Data.SqlClient;
-using StoreManagementSystem.Classes;
+
+using StoreManagementSystem.Classes.General;
 using StoreManagementSystem.Properties;
-using System.Security.Cryptography;
-using System.Text;
 
 //	Callbacks
 delegate void SetClockCallback(DateTime datetime);
+delegate void SetButtonsStatusCallback(bool enabled);
 
 
 namespace StoreManagementSystem
@@ -107,7 +106,7 @@ namespace StoreManagementSystem
 			if (this.lblClock.InvokeRequired)
 			{
 				SetClockCallback call = new SetClockCallback(SetClock);
-				this.Invoke(call, new object[] { datetime });
+				this.Invoke(call, [datetime]);
 			}
 			else
 			{
@@ -178,18 +177,21 @@ namespace StoreManagementSystem
 				{
 					if (this.db_reconnection_count <= 50)
 					{
+						SetButtonsStatus(false);
 						this.db_reconnection_count++;
 						this.ConnectionStatus = DbConnStatus.Connecting;
 
 					}
 					else
 					{
+						SetButtonsStatus(false);
 						this.db_reconnection_count = 51;
 						this.ConnectionStatus = DbConnStatus.Error;
 					}
 				}
 				else
 				{
+					SetButtonsStatus(true);
 					this.db_reconnection_count = 0;
 					this.ConnectionStatus = DbConnStatus.Ok;
 				}
@@ -205,7 +207,27 @@ namespace StoreManagementSystem
 				this.CurrentTime = DateTime.Now;
 
 				//	10s sleeps to update time. No seconds to update, only year, month, day, hours and minutes
-				Thread.Sleep(10000);
+				Thread.Sleep(5000);
+			}
+		}
+
+		#endregion
+
+		#region System Methods
+
+		/// <summary>
+		/// Disables all buttons in home page. Intended to be used only when database loses connection
+		/// </summary>
+		private void SetButtonsStatus(bool enabled)
+		{
+			if (this.btnResetDatabase.InvokeRequired)
+			{
+				SetButtonsStatusCallback call = new SetButtonsStatusCallback(SetButtonsStatus);
+				this.btnResetDatabase.Invoke(call, [enabled]);
+			}
+			else
+			{
+				this.btnResetDatabase.Enabled = enabled;
 			}
 		}
 

@@ -20,7 +20,14 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'" />
 
   <ItemGroup>
-    <Folder Include="Forms\" />
+    <Folder Include="Classes\Items\" />
+    <Folder Include="Classes\Balances\" />
+    <Folder Include="Classes\Sales\" />
+    <Folder Include="Classes\Users\" />
+    <Folder Include="Forms\Items\" />
+    <Folder Include="Forms\Balances\" />
+    <Folder Include="Forms\Sales\" />
+    <Folder Include="Forms\Users\" />
   </ItemGroup>
 
   <ItemGroup>
