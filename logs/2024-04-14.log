@@ -20,3 +20,11 @@
 24/04/14T03:11:07.290697	[INFO]		DbConn.cs:34 -> Init()			Db Connection established
 24/04/14T03:11:25.395383	[INFO]		Home.cs:106 -> LoadInitConfig()			Config loaded OK
 24/04/14T03:11:25.604267	[INFO]		DbConn.cs:34 -> Init()			Db Connection established
+24/04/14T03:30:27.814600	[INFO]		Home.cs:123 -> LoadInitConfig()			Config loaded OK
+24/04/14T03:30:28.006734	[INFO]		DbConn.cs:34 -> Init()			Db Connection established
+24/04/14T04:27:51.064556	[INFO]		Home.cs:130 -> LoadInitConfig()			Config loaded OK
+24/04/14T04:27:51.268486	[INFO]		DbConn.cs:33 -> Init()			Db Connection established
+24/04/14T04:27:56.190824	[INFO]		Home.cs:225 -> btnResetDatabase_Click()			Database reset successfully!
+24/04/14T04:28:08.631503	[INFO]		Home.cs:225 -> btnResetDatabase_Click()			Database reset successfully!
+24/04/14T04:28:23.954674	[INFO]		Home.cs:225 -> btnResetDatabase_Click()			Database reset successfully!
+24/04/14T04:28:48.580191	[INFO]		Home.cs:225 -> btnResetDatabase_Click()			Database reset successfully!

@@ -12,7 +12,6 @@ namespace StoreManagementSystem.Classes
 	{
 		public static SqlConnectionStringBuilder conn_builder;
 
-
 		public static bool Init()
 		{
 			Logger logger = Logger.Instance;
@@ -44,9 +43,10 @@ namespace StoreManagementSystem.Classes
 			}
 		}
 
-		public static SqlConnection GetConn()
+		public static SqlConnection GetOpenConn()
 		{
 			SqlConnection conn = new SqlConnection(conn_builder.ConnectionString);
+			conn.Open();
 
 			return conn;
 		}
@@ -92,6 +92,20 @@ namespace StoreManagementSystem.Classes
 				return false;
 			}
 		}
+
+		#region Queries Execution
+
+		public static bool SchemaReset(string query)
+		{
+			SqlConnection conn = GetOpenConn();
+			SqlCommand cmd = new SqlCommand(query, conn);
+
+			int ar = cmd.ExecuteNonQuery();
+
+			return ar > 0;
+		}
+
+		#endregion
 	}
 }
 

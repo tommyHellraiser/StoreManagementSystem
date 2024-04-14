@@ -30,6 +30,7 @@
 		{
 			picDbConnStatus = new PictureBox();
 			lblClock = new Label();
+			btnResetDatabase = new CustomButton.HellButton();
 			((System.ComponentModel.ISupportInitialize)picDbConnStatus).BeginInit();
 			SuspendLayout();
 			// 
@@ -56,12 +57,32 @@
 			lblClock.Text = "--/--/-- --:--";
 			lblClock.TextAlign = ContentAlignment.MiddleCenter;
 			// 
+			// btnResetDatabase
+			// 
+			btnResetDatabase.BackColor = Color.IndianRed;
+			btnResetDatabase.BackgroundColor = Color.IndianRed;
+			btnResetDatabase.BorderColor = Color.Red;
+			btnResetDatabase.BorderRadius = 30;
+			btnResetDatabase.BorderSize = 4;
+			btnResetDatabase.FlatAppearance.BorderSize = 0;
+			btnResetDatabase.FlatStyle = FlatStyle.Flat;
+			btnResetDatabase.ForeColor = Color.WhiteSmoke;
+			btnResetDatabase.Location = new Point(12, 394);
+			btnResetDatabase.Name = "btnResetDatabase";
+			btnResetDatabase.Size = new Size(116, 44);
+			btnResetDatabase.TabIndex = 2;
+			btnResetDatabase.Text = "Reset Database!";
+			btnResetDatabase.TextColor = Color.WhiteSmoke;
+			btnResetDatabase.UseVisualStyleBackColor = false;
+			btnResetDatabase.Click += btnResetDatabase_Click;
+			// 
 			// Home
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = SystemColors.ActiveCaption;
 			ClientSize = new Size(800, 450);
+			Controls.Add(btnResetDatabase);
 			Controls.Add(lblClock);
 			Controls.Add(picDbConnStatus);
 			Name = "Home";
@@ -74,5 +95,6 @@
 
 		private PictureBox picDbConnStatus;
 		private Label lblClock;
+		private CustomButton.HellButton btnResetDatabase;
 	}
 }

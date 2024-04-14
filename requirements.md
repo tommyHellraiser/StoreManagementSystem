@@ -25,7 +25,7 @@
 ## Home page sections
 - [x] Clock
 - [x] Db status
-- [ ] Db reset button
+- [x] Db reset button
 - [ ] User management
 - [ ] Item management
 - [ ] Balances management
