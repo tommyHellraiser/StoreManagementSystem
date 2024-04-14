@@ -113,7 +113,7 @@ namespace CustomButton
 
 			RectangleF rSurface = new(0, 0, this.Width, this.Height);
 			//	TODO try changing these
-			RectangleF rBorder = new(1, 1, this.Width - 0.8F, this.Height - 1F);
+			RectangleF rBorder = new(1, 1, this.Width - 1F, this.Height - 1F);
 
 			if (this.borderRadius > 2)  //	If > 2 -> rounded button
 			{

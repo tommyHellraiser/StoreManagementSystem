@@ -1,5 +1,7 @@
 
 using StoreManagementSystem.Classes.General;
+using StoreManagementSystem.Classes.Users;
+using StoreManagementSystem.Forms.Users;
 using StoreManagementSystem.Properties;
 
 //	Callbacks
@@ -11,15 +13,26 @@ namespace StoreManagementSystem
 {
 	public partial class Home : Form
 	{
+
+		private User user;
+
 		/// Class constructor
 		public Home()
 		{
 			InitializeComponent();
 
+			LoadInitConfig();
 
-			Task.Run(() => LoadInitConfig());
+			while (!DbConn.IsDbConnected())
+			{
+				Thread.Sleep(100);
+			}
 
-
+			if (!CallLogin())
+			{
+				Environment.Exit(0);
+			}
+			
 
 			//Hash a pass in C#
 			//SHA256 hasher = SHA256.Create();
@@ -116,6 +129,8 @@ namespace StoreManagementSystem
 
 		#endregion
 
+		#region System Methods
+
 		private void LoadInitConfig()
 		{
 			//	Initialize and instantiate logger
@@ -166,6 +181,48 @@ namespace StoreManagementSystem
 			Task.Run(() => DbHealth());
 			Task.Run(() => ClockHandler());
 		}
+
+		/// <summary>
+		/// Calls login form to execute user login, and saves the logged in user in global class property
+		/// </summary>
+		/// <returns>
+		/// True if login was successful, false if user closed form
+		/// </returns>
+		private bool CallLogin()
+		{
+			Logger logger = Logger.Instance;
+
+			try
+			{
+				//	Display login box
+				UserLogin login_form = new();
+				login_form.ShowDialog();
+
+				//	If user closed dialog, close application
+				if (login_form.user == null)
+				{
+					MessageBox.Show(
+						"Cannot start application if a user is not logged in",
+						"Login required",
+						MessageBoxButtons.OK,
+						MessageBoxIcon.Error);
+
+					return false;
+				}
+
+				//	Otherwise, user should be logged in by now
+				this.user = login_form.user;
+
+				return true;
+			}
+			catch (Exception ex)
+			{
+				logger.Log($"Error logging user in: {ex.Message}", LogLevel.Error);
+				return false;
+			}
+		}
+
+		#endregion
 
 		#region Cron jobs
 
