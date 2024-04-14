@@ -12,3 +12,11 @@
 - [ ] Shopping cart to allow several items in each sale
 - [ ] Login for users (employees)
 - [ ] Total sales for a user in a day
+
+
+## Database tables
+- item
+- user
+- sale_logs
+- item_sale_logs
+- balances
